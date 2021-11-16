@@ -16,6 +16,9 @@ function setUserName() {
   var myName = prompt('Укажите имя.');
   localStorage.setItem('name', myName);
   myHeading.textContent = 'Собаки это круто, ' + myName;
+  if (myName == "Sonya") {
+  	myImage.setAttribute ('src', 'images/Sonya.JPG') ;
+  }
 }
 
 if(!localStorage.getItem('name')) {
